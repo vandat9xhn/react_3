@@ -1,0 +1,46 @@
+$header-h: 48px;
+
+.WatchYouTubeMb {
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.WatchYouTubeMb_header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: $header-h;
+  background-color: rgb(59, 53, 53);
+}
+
+.WatchYouTubeMb_main {
+  position: fixed;
+  top: $header-h;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.WatchYouTubeMb_main_contain {
+  position: relative;
+  overflow: hidden;
+}
+
+.WatchYouTubeMb_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+.WatchYouTubeMb_src {
+  width: 100%;
+  height: 100%;
+}
+
+.WatchYouTubeMb_list {
+  min-height: 250vh;
+  background-color: rgb(150, 148, 187);
+}

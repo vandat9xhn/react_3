@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ContextApiComponent from "context/ContextApiComponent";
 import CommonPg from "pages/common/CommonPg";
 import AppChakra from "pages/chakra/AppChakra";
+import WatchYouTubeMb from "pages/watch_youtube_mb/WatchYouTubeMb";
 // import BtnSimple from "./components/buttons/simple/BtnSimple";
 
 //
@@ -18,6 +19,8 @@ const App: React.FunctionComponent<AppProps> = () => {
           <Route path="/common" element={<CommonPg />} />
 
           <Route path="/chakra" element={<AppChakra />} />
+
+          <Route path="/watch-youtube" element={<WatchYouTubeMb />} />
         </Routes>
       </ContextApiComponent>
     </BrowserRouter>
