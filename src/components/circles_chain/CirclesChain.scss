@@ -1,0 +1,60 @@
+.CirclesChain_contain {
+  margin: auto;
+  width: 500px;
+  max-width: 100%;
+}
+
+.CirclesChain_row {
+  display: flex;
+  justify-content: center;
+}
+
+// .CirclesChain_item {
+// }
+
+.CirclesChain_circle_contain {
+  position: relative;
+  padding-top: 100%;
+}
+
+.CirclesChain_circle_child {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+.CirclesChain_circle_child1 {
+  top: 0;
+  .CirclesChain_circle_child_contain {
+    top: 0;
+  }
+}
+.CirclesChain_circle_child2 {
+  position: absolute;
+  bottom: 0;
+  
+  .CirclesChain_circle_child_contain {
+    bottom: 0;
+  }
+}
+
+.CirclesChain_circle_child_contain {
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  height: 200%;
+  border: 10px solid;
+  border-radius: 50%;
+
+  // animation: rotate360 2s linear infinite;
+}
+
+//
+
+@keyframes rotate360 {
+  to {
+    transform: rotate(360deg);
+  }
+}
