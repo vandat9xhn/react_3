@@ -1,0 +1,43 @@
+// 
+@for $x from 1 to 4 {
+  .CirclesChain3d_item{
+    &:nth-child(#{$x}) {
+      transform: rotateX(#{$x * 0.25}deg) rotateZ(0deg);
+      animation-name: rotate360-#{$x};
+    }
+  }
+  
+  @keyframes rotate360-#{$x} {
+    to {
+      transform: rotateX(#{$x * 0.25}deg) rotateZ(360deg);
+    }
+  }
+}
+
+// 
+
+.CirclesChain3d {
+  margin: auto;
+  width: 500px;
+  max-width: 100%;
+}
+
+.CirclesChain3d_contain {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.CirclesChain3d_item {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  animation: 10s linear infinite;
+
+  
+}
+
+.CirclesChain3d_circle {
+  width: 100%;
+  height: 100%;
+  border: 20px solid;
+}

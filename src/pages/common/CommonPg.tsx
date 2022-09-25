@@ -4,6 +4,7 @@ import BtnSimple from "components/buttons/simple/BtnSimple";
 import TagHtml from "components/tag_html/TagHtml";
 import MyAudio from "components/audio/MyAudio";
 import CirclesChain from "components/circles_chain/CirclesChain";
+import CirclesChain3d from "components/circles_chain/3d/CirclesChain3d";
 
 //
 export interface CommonPgProps {}
@@ -31,8 +32,12 @@ function CommonPg({}: CommonPgProps) {
         <MyAudio />
       </div> */}
 
-      <div>
+      {/* <div>
         <CirclesChain />
+      </div> */}
+
+      <div>
+        <CirclesChain3d />
       </div>
 
       <br />
