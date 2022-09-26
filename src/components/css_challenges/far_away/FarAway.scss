@@ -1,0 +1,24 @@
+.FarAway{
+  perspective: 150px;
+  transform-style: preserve-3d;
+}
+
+.FarAway_contain {
+  position: relative;
+  border: 1px solid black;
+  overflow: hidden;
+  transform: rotateX(45deg);
+}
+
+.FarAway_list {
+  transform: translateY(100%);
+  animation: far-away 8s linear infinite;
+}
+
+//
+
+@keyframes far-away {
+  to {
+    transform: translateY(-100%);
+  }
+}
