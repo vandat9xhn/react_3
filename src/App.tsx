@@ -9,6 +9,8 @@ import AppChakra from "pages/chakra/AppChakra";
 import WatchYouTubeMb from "pages/watch_youtube_mb/WatchYouTubeMb";
 import WorkerPg from "pages/worker/WorkerPg";
 import CssChallengesPg from "pages/css_challenges/CssChallengesPg";
+import RegisterPg from "pages/register/RegisterPg";
+import LoginPg from "pages/login/LoginPg";
 // import BtnSimple from "./components/buttons/simple/BtnSimple";
 
 //
@@ -25,6 +27,9 @@ const App: React.FunctionComponent<AppProps> = () => {
           <Route path="/watch-youtube" element={<WatchYouTubeMb />} />
           <Route path="/worker" element={<WorkerPg />} />
           <Route path="/css-challenges" element={<CssChallengesPg />} />
+
+          <Route path="/register" element={<RegisterPg />} />
+          <Route path="/login" element={<LoginPg />} />
         </Routes>
       </ContextApiComponent>
     </BrowserRouter>

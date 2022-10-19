@@ -2,6 +2,65 @@
   box-sizing: border-box;
 }
 
+//
+.sign {
+  min-height: 100vh;
+  padding: 50px 0;
+  background-color: #f0f2f5;
+}
+
+.sign_contain {
+  margin: auto;
+  width: 450px;
+}
+
+.sign_part {
+  position: relative;
+  margin-bottom: 20px;
+
+  &:focus-within {
+    .sign_label {
+      color: rgb(132, 132, 255);
+    }
+  }
+}
+
+.sign_label {
+  position: absolute;
+  top: 6px;
+  left: 20px;
+
+  font-size: 13px;
+  line-height: 13px;
+  color: rgb(83, 83, 83);
+}
+
+.sign_ip {
+  width: 100%;
+  padding: 25px 20px 6px;
+  border: 1px solid rgb(92, 92, 92);
+  border-radius: 6px;
+  background-color: transparent;
+  outline-color: rgb(93, 93, 248);
+}
+
+.sign_error {
+  font-size: 13px;
+  color: rgb(250, 93, 93);
+}
+
+.sign_submit {
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(28, 28, 255);
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(43, 43, 207);
+  }
+}
+
 // ------ FLEX
 
 .flex {
